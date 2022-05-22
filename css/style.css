@@ -50,9 +50,9 @@ h1{
 
 nav ul{
 
-    background: rgb(207, 199, 199);
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
     list-style-type: none;
+    margin-bottom: 1rem;
 
 }
 
@@ -97,6 +97,7 @@ li a:hover {
 }
 .nav a{
     font-size: 1.5rem;
+    text-decoration: none;
 }
 
         /*navigation*/
@@ -104,9 +105,7 @@ li a:hover {
         ul,
         li {
             position: relative;
-            display: flex;
             align-items: center;
-            justify-content: space-between;
             
         }
     
@@ -231,23 +230,54 @@ footer{
     font-size: 20px;
     font-weight: 800;
 }
+
+
 /* Footer*/
 footer{
-    background-color: #c8D366;
+    background-color: #4d5124;
     color: #ededed;
-    
     text-align: center;
     font-size: 1.2rem;
     font-weight: 700;
 }
-.footer{
+
+.footer {
     padding: 40px 0;
 }
-.footer .social{
+
+ .social {
+    text-align: center;
+    padding-bottom: 25px;
+    color: #4b4c4d;
+
+}
+
+ .social {
     color: rgb(228, 227, 227);
     text-align: center;
 }
 
+ .social a {
+  font-size: 24px;
+  color: inherit;
+  border: 1px solid #ccc;
+  width: 40px;
+  height: 40px;
+    line-height: 40px;
+    display: inline-block;
+    text-align: center;
+    margin: 0 8px;
+    opacity: 0.75;
+
+}
+
+.footer .social a:hover {
+opacity: 0.9;
+
+}
+   .current-menu-item a {
+       color: red;
+   }
 
 @media only screen and (max-width: 800px) {
 
@@ -274,6 +304,7 @@ footer{
     h2 {
         font-size: 2.2rem;
     }
+     
 
     .mobile-menu {
         display: block;
@@ -284,7 +315,8 @@ footer{
 
     .menu {
         position: absolute;
-        background-color: red;
+        background-color: rgb(219, 207, 207);
+        opacity:0.99;
         width: 100%;
         top: 100%;
         z-index: 99;
