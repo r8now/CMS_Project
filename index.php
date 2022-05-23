@@ -32,7 +32,12 @@
       </main>
 
       <section style="display: none">SECTION -Maybe widget AREA</section>
-          <aside style="display: none"> </aside>
+    
+      <!-- sidebar start -->
+
+      <?php get_sidebar(); ?>
+      
+      <!-- sidebar end -->
       
       <?php get_footer(); ?>
 <!-- FOOTER section start-->
