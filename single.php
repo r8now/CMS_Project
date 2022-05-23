@@ -26,7 +26,11 @@
        
       </main>
 
-      <section style="display: none">SECTION -Maybe widget AREA</section>
+      <section style="display: none">
+    
+    
+    
+    </section>
           <aside style="display: none"> </aside>
       
       <?php get_footer(); ?>

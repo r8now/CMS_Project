@@ -279,6 +279,10 @@ opacity: 0.9;
        color: red;
    }
 
+   .wp-block-contact-form-7-contact-form-selector label{
+       max-width: 100px;
+   }
+
 @media only screen and (max-width: 800px) {
 
 

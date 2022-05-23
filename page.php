@@ -5,7 +5,7 @@
 
     <div class="container" >
     <!--  <main style="grid-template-columns: 1fr"> -->
-    <main> 
+    <main  style="grid-template-columns: 1fr">
 
         <?php 
           if(have_posts()) {
@@ -13,7 +13,7 @@
               the_post();
               ?>
               <article ">
-              <h2><?php the_title(); ?></h2>
+              <h2><?= the_title(); ?></h2>
            
               <?php the_content(); ?>
               </article>
@@ -26,21 +26,32 @@
 
       <section >
     <!-- Widget area-->
-
-<?php
+   <!-- check if the page is the contact page-->
+    <?php if(is_page('kontakt')) : ?>
+      <?php
 if (is_active_sidebar('widget-area'))  : ?>
 <div id="widget-area">
     <?php dynamic_sidebar('widget-area'); ?>
 </div>
 <?php endif; ?>
 
-<?php echo do_shortcode('
+      
+       <?php echo do_shortcode('
   [wpgmza id="1"]
 '); ?>
+    </div>
+    <?php endif; ?>
+
+
+    <!-- Widget area end-->
+
+
 
     
     
     </section>
+
+    
           <aside style="display: none"> </aside>
       
       <?php get_footer(); ?>
