@@ -21,12 +21,11 @@
             }
           }    
      ?>
-       
       </main>
-
       <section >
     <!-- Widget area-->
    <!-- check if the page is the contact page-->
+
     <?php if(is_page('kontakt')) : ?>
       <?php
 if (is_active_sidebar('widget-area'))  : ?>
@@ -34,6 +33,7 @@ if (is_active_sidebar('widget-area'))  : ?>
     <?php dynamic_sidebar('widget-area'); ?>
 </div>
 <?php endif; ?>
+<h2>Här hittar du oss!</h2>
 
       
        <?php echo do_shortcode('

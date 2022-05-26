@@ -1,6 +1,6 @@
 <?php get_header(); ?>
     <!-- HEAD section and NAVIGATION end-->
-    <h1>category.PHP</h1>
+    <h1>category-boende.PHP</h1>
     <!--  get the category name-->
     <?php 
       $category = get_the_category();
@@ -14,19 +14,25 @@
     <main > 
 
         <?php 
+
+
+
+       
+
           if(have_posts()) {
             while(have_posts()) {
               the_post();
+
               ?>
               <article ">
                
                     <br>
               <h2><?php the_title(); ?></h2>
+                <?php the_content(); ?>
 
-              <?php the_content(); ?>
+
             
-               <i><?=the_time('Y-m-d \k\l H:i'); ?></i>
-                <i><?=the_author(); ?></i>
+            
               <br>
 
               <a href="<?php the_permalink(); ?>"> Länk</a>
@@ -34,8 +40,12 @@
               </article>
                <?php
             }
-          }    
+          }  
+
      ?>
+
+
+      
        
       </main>
 
@@ -45,7 +55,7 @@
 
      
           <aside >
-            <h3>Nyheter</h3>
+            <h3>Boende</h3>
             <hr style="margin-bottom:20px;">
            <?php 
              wp_reset_query();//Nollställ custom query

@@ -17,6 +17,9 @@ html {
 body {
     font-family: 'Roboto', sans-serif;
     background: #f2f2f2;
+    background-image: url("/images/right.jpg");
+    background-size: cover;
+    background-image: url("../images/right.jpg");
    
 
 }
@@ -36,7 +39,9 @@ p {
 
 }
 p{
-    line-height: 1.2rem;
+    line-height: 1.5rem;
+    letter-spacing: 0.05rem;
+    
 }
 
 h1{
@@ -118,6 +123,13 @@ li a:hover {
 
 /* HEADER CSS START*/
 
+.logo img{
+    max-width: 100%;
+    align-items: center;
+    max-height: 250px;
+    
+}
+
 .hero {
 
     max-height: 250px;
@@ -141,10 +153,28 @@ li a:hover {
     margin-top: 0px;
     background-position: center;
     background-repeat: no-repeat;
+    min-height: 250px;
 }
 
+
+article:hover{
+    background-image: linear-gradient(to right, rgb(224, 149, 29), rgb(197, 187, 228));
+
+}
+/* every other article*/
+article:hover:nth-child(even){
+    background-image: linear-gradient(to right, rgb(134, 212, 24), rgb(189, 186, 199));
+}
+
+
+
+
+
+
 .hero .right {
-    background-color: #c8D366;
+    background-color: rgb(42, 13, 156);
+    background-image: linear-gradient(to right, rgb(146, 137, 181), rgb(43, 34, 78));
+    background-image: url("../images/right.jpg");
 }
 
 .hero .content-box {
@@ -160,9 +190,10 @@ li a:hover {
 main{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    /* grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%),1fr));*/
     grid-auto-rows: minmax(150px, auto);
     margin: 0 auto;
-    gap: 10px;
+    gap: 50px;
 }
 
 /* inställningar för single pages lägger 1fr på main*/

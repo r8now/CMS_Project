@@ -31,7 +31,7 @@
     
     
     </section>
-          <aside style="display: none"> </aside>
+          <aside > </aside>
       
       <?php get_footer(); ?>
 <!-- FOOTER section start-->

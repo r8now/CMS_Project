@@ -11,12 +11,14 @@
     <title><?php  bloginfo('name'); ?></title>
 
     <div class="scroll-top"><|></div>
+  
   </head>
   <body>
+
     <header>
       <section class="hero">
         <div class="left">
-          <img id="left-image" src="<?= get_template_directory_uri();?>/images/bg.jpg" alt="" />
+          <img id="left-image" src="<?= get_template_directory_uri();?>/images/header.jpg" alt="" />
         </div>
         <div class="right">
           <div class="content-box">
@@ -24,7 +26,9 @@
               <a href="<?= get_home_url(); ?>">
                 <img src="<?= get_template_directory_uri();?>/images/bg.jpg" alt=""
               /></a>
+
             </div>
+
           </div>
         </div>
       </section>
