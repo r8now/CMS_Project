@@ -17,10 +17,11 @@
             while(have_posts()) {
               the_post();
               ?>
-              <article ">
+              <article>
                
                     <br>
               <h2><?php the_title(); ?></h2>
+              <?php if(has_post_thumbnail()) {the_post_thumbnail('custom-large'); } ?>
 
               <?php the_content(); ?>
             
@@ -28,7 +29,7 @@
                 <i><?=the_author(); ?></i>
               <br>
 
-              <a href="<?php the_permalink(); ?>"> Länk</a>
+              <a href="<?php the_permalink(); ?>"> Läs mer</a>
 
               </article>
                <?php
@@ -38,7 +39,7 @@
        
       </main>
 
-      <section style="display: none">SECTION -Maybe widget AREA</section>
+      <section style="display: none">SECTION -widget AREA</section>
     
       <!-- sidebar start -->
 

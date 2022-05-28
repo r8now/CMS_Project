@@ -253,26 +253,7 @@ footer{
     grid-area: footer;
 }
 
-/* form */
- .wp-block-contact-form-7-contact-form-selector {
-    margin: 0 auto;
-    padding: 0;
-    max-width: 80%;
-}
 
- .wp-block-contact-form-7-contact-form-,
-input {
-
-    max-width: 80%;
-}
-
- .wp-block-contact-form-7-contact-form-,
-textarea {
-
-    max-width: 80%;
-}
-
-/*FORM*/
 
 
 
@@ -423,6 +404,28 @@ opacity: 0.9;
     main {
         grid-template-columns: 1fr;
     }
-
+        /* form */
+        .wp-block-contact-form-7-contact-form-selector {
+            margin: 0 auto;
+            padding: 0;
+            max-width: 80%;
+        }
+    
+        .wp-block-contact-form-7-contact-form-,
+        input {
+    
+            max-width: 80%;
+        }
+    
+        .wp-block-contact-form-7-contact-form-,
+        textarea {
+    
+            max-width: 80%;
+        }
+    
+        /*FORM*/
+article {
+    max-width: 90%;
+}
 
 }

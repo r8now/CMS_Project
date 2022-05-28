@@ -15,7 +15,8 @@
               ?>
               <article>
               <h2><?php the_title(); ?></h2>
-           
+            <?php if(has_post_thumbnail()) {the_post_thumbnail('custom-large'); } ?>
+              
               <?php the_content(); ?>
             <!--  <p>Skriven av <?php the_author()?>. den <?php the_date(); ?></p> -->
               </article>

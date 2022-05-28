@@ -24,12 +24,11 @@
               the_post();
 
               ?>
-              <article >
+              <article>
                
                     <br>
               <h2><?php the_title(); ?></h2>
               <?php if(has_post_thumbnail()) {the_post_thumbnail('custom-large'); } ?>
-              
                 <?php the_excerpt(); ?>
 
 
@@ -52,7 +51,7 @@
        
       </main>
 
-      <section style="display: none">SECTION -Maybe widget AREA</section>
+      <section style="display: none">SECTION -widget AREA</section>
     
       <!-- sidebar start -->
 
