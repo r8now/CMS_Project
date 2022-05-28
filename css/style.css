@@ -159,11 +159,19 @@ li a:hover {
 
 article:hover{
     background-image: linear-gradient(to right, rgb(224, 149, 29), rgb(197, 187, 228));
+        padding: 5px;
+            transition: all 2s ease;
+            transition: all 2s ease-out;
+
 
 }
+
+
 /* every other article*/
 article:hover:nth-child(even){
     background-image: linear-gradient(to right, rgb(134, 212, 24), rgb(189, 186, 199));
+ 
+        transition: all 2s ease;
 }
 
 
@@ -174,7 +182,11 @@ article:hover:nth-child(even){
 .hero .right {
     background-color: rgb(42, 13, 156);
     background-image: linear-gradient(to right, rgb(146, 137, 181), rgb(43, 34, 78));
-    background-image: url("../images/right.jpg");
+    background-image: url("../images/winter.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-height: 250px;
+    
 }
 
 .hero .content-box {
@@ -241,7 +253,26 @@ footer{
     grid-area: footer;
 }
 
+/* form */
+ .wp-block-contact-form-7-contact-form-selector {
+    margin: 0 auto;
+    padding: 0;
+    max-width: 80%;
+}
 
+ .wp-block-contact-form-7-contact-form-,
+input {
+
+    max-width: 80%;
+}
+
+ .wp-block-contact-form-7-contact-form-,
+textarea {
+
+    max-width: 80%;
+}
+
+/*FORM*/
 
 
 

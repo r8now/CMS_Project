@@ -21,7 +21,7 @@ add_action('init', 'register_my_menus');
 
     //Aktivera header-bild      ---------INTE KLAR!
     $args = array(
-        'default-image'          => get_template_directory_uri() . '/images/bg.jpg',
+        'default-image'          => get_template_directory_uri() . './images/bg.jpg',
         'width'                  =>   1024,
         'height'                 => 250,
         'uploads'                => true,
@@ -45,4 +45,20 @@ function slide_widget_init(){
         'id' => 'slide-widget',   
     ));}
 
- 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

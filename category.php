@@ -5,7 +5,6 @@
     <?php 
       $category = get_the_category();
  ?>
-    <h1><?php echo $category[0]->cat_name; ?></h1>
 
 
 
@@ -50,7 +49,9 @@
            <?php 
              wp_reset_query();//Nollställ custom query
              // put a variable in the query
-              query_posts('category_name='.$category[0]->name.'&posts_per_page=6');
+          //  query_posts('category_name='.$category[0]->name.'&posts_per_page=6'); 
+            query_posts('category_name='.$category[0]->name.'&posts_per_page=6'); 
+
 
           if(have_posts()) {
             while(have_posts()) {

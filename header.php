@@ -24,7 +24,7 @@
           <div class="content-box">
             <div class="logo">
               <a href="<?= get_home_url(); ?>">
-                <img src="<?= get_template_directory_uri();?>/images/bg.jpg" alt=""
+                <img src="<?= get_template_directory_uri();?>/images/logo.png" alt=""
               /></a>
 
             </div>

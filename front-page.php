@@ -39,13 +39,13 @@
             <hr style="margin-bottom:20px;">
            <?php 
              wp_reset_query();//Nollställ custom query
-  query_posts('category_name=nyheter&posts_per_page=6');
+  query_posts('category_name=nyheter&posts_per_page=2');
 
           if(have_posts()) {
             while(have_posts()) {
               the_post();
               ?>
-              <article ">
+              <article >
               
            
               <a href="<?php the_permalink(); ?>"><h3><?php the_title(); ?></h3></a>
@@ -56,26 +56,48 @@
             }
           }    
      ?>
-          
+          <h3>Boende</h3>
+          <hr>
+          <br>
         <?php 
         wp_reset_query();
-  query_posts('category_name=nyheter&posts_per_page=6');
+  query_posts('category_name=boende&posts_per_page=2');
   if(have_posts()) {  
     while(have_posts()) {
       the_post();
 
-      //Finns det en bild?
-      if(has_post_thumbnail()) {
       ?>
       <article>
-      <h3><?php the_title(); ?></h3>
-      <a href="<?php the_permalink(); ?>" <?php the_post_thumbnail();?>>Länk</a>
+                  <a href="<?php the_permalink(); ?>"><h3><?php the_title(); ?></h3></a>
 
+    </article>
       
        <?php
     } 
   }
+  
+    ?>
+
+          <h3>Boende</h3>
+          <hr>
+          <br>
+        <?php 
+        wp_reset_query();
+  query_posts('category_name=boende&posts_per_page=2');
+  if(have_posts()) {  
+    while(have_posts()) {
+      the_post();
+
+      ?>
+      <article>
+                  <a href="<?php the_permalink(); ?>"><h3><?php the_title(); ?></h3></a>
+
+    </article>
+      
+       <?php
+    } 
   }
+  
     ?>
         </aside>
       

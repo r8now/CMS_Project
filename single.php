@@ -13,11 +13,11 @@
             while(have_posts()) {
               the_post();
               ?>
-              <article ">
+              <article>
               <h2><?php the_title(); ?></h2>
            
               <?php the_content(); ?>
-              <p>Skriven av <?php the_author()?>. den <?php the_date(); ?></p>
+            <!--  <p>Skriven av <?php the_author()?>. den <?php the_date(); ?></p> -->
               </article>
                <?php
             }

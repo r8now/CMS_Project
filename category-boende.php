@@ -24,18 +24,21 @@
               the_post();
 
               ?>
-              <article ">
+              <article >
                
                     <br>
               <h2><?php the_title(); ?></h2>
-                <?php the_content(); ?>
+              <?php if(has_post_thumbnail()) {the_post_thumbnail('custom-large'); } ?>
+              
+                <?php the_excerpt(); ?>
+
 
 
             
             
               <br>
 
-              <a href="<?php the_permalink(); ?>"> Länk</a>
+              <a href="<?php the_permalink(); ?>"> Boka här!</a>
 
               </article>
                <?php
@@ -66,9 +69,9 @@
             while(have_posts()) {
               the_post();
               ?>
-              <article ">
+              <article >
               
-           
+                 
               <a href="<?php the_permalink(); ?>"><h3><?php the_title(); ?></h3></a>
 
               
