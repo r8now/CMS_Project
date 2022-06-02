@@ -5,7 +5,7 @@
 
     <div class="container" >
     <!--  <main style="grid-template-columns: 1fr"> -->
-    <main > 
+    <main  > 
 
 
         <?php 

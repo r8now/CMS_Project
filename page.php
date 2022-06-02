@@ -14,6 +14,7 @@
               ?>
               <article ">
               <h2><?= the_title(); ?></h2>
+              <?php if(has_post_thumbnail()) {the_post_thumbnail('custom-large'); } ?>
            
               <?php the_content(); ?>
               </article>
@@ -38,6 +39,7 @@ if (is_active_sidebar('widget-area'))  : ?>
       
        <?php echo do_shortcode('
   [wpgmza id="1"]
+
 '); ?>
     </div>
     <?php endif; ?>

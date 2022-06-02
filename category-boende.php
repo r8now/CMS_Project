@@ -14,12 +14,7 @@
     <main > 
 
         <?php 
-
-
-
-       
-
-          if(have_posts()) {
+         if(have_posts()) {
             while(have_posts()) {
               the_post();
 
@@ -31,10 +26,6 @@
               <?php if(has_post_thumbnail()) {the_post_thumbnail('custom-large'); } ?>
                 <?php the_excerpt(); ?>
 
-
-
-            
-            
               <br>
 
               <a href="<?php the_permalink(); ?>"> Boka här!</a>
@@ -68,7 +59,7 @@
             while(have_posts()) {
               the_post();
               ?>
-              <article >
+              <article>
               
                  
               <a href="<?php the_permalink(); ?>"><h3><?php the_title(); ?></h3></a>

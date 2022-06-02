@@ -10,7 +10,7 @@
 
     <div class="container" >
     <!--  <main style="grid-template-columns: 1fr"> -->
-    <main > 
+    <main>
 
         <?php 
           if(have_posts()) {
@@ -58,7 +58,7 @@
             while(have_posts()) {
               the_post();
               ?>
-              <article ">
+              <article>
               
            
               <a href="<?php the_permalink(); ?>"><h3><?php the_title(); ?></h3></a>

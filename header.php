@@ -10,7 +10,7 @@
     <title><?php echo $title; ?></title>
     <title><?php  bloginfo('name'); ?></title>
 
-    <div class="scroll-top"><|></div>
+    <div class="scroll-top"><i class="icofont-arrow-up"></i></div>
   
   </head>
   <body>
@@ -18,13 +18,13 @@
     <header>
       <section class="hero">
         <div class="left">
-          <img id="left-image" src="<?= get_template_directory_uri();?>/images/header.jpg" alt="" />
+          <img id="left-image" src="<?= get_template_directory_uri();?>/images/header.jpg" alt="Huvudbild" />
         </div>
         <div class="right">
           <div class="content-box">
             <div class="logo">
               <a href="<?= get_home_url(); ?>">
-                <img src="<?= get_template_directory_uri();?>/images/logo.png" alt=""
+                <img src="<?= get_template_directory_uri();?>/images/logo.png" alt="logobild-Miuns-hotel"
               /></a>
 
             </div>

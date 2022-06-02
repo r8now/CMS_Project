@@ -8,7 +8,7 @@
     <main> 
 
         <?php 
-  query_posts('category_name=nyheter&posts_per_page=6');
+  query_posts('category_name=nyheter&posts_per_page=2');
 
           if(have_posts()) {
             while(have_posts()) {
@@ -16,6 +16,7 @@
               ?>
               <article >
               <h2><?php the_title(); ?></h2>
+              <?php if(has_post_thumbnail()) {the_post_thumbnail('custom-large'); } ?>
            
               <?php the_content(); ?>
               </article>
@@ -23,6 +24,51 @@
             }
           }    
      ?>
+       
+    <?php 
+  query_posts('category_name=boende&posts_per_page=2');
+
+         if(have_posts()) {
+            while(have_posts()) {
+              the_post();
+
+              ?>
+              <article>
+               
+                    <br>
+              <h2><?php the_title(); ?></h2>
+              <?php if(has_post_thumbnail()) {the_post_thumbnail('custom-large'); } ?>
+                <?php the_excerpt(); ?>
+
+              <br>
+
+              <a href="<?php the_permalink(); ?>"> Boka här!</a>
+
+              </article>
+               <?php
+            }
+          }  
+
+     ?>
+     
+        <?php 
+  query_posts('category_name=aktiviteter&posts_per_page=2');
+
+          if(have_posts()) {
+            while(have_posts()) {
+              the_post();
+              ?>
+              <article >
+              <h2><?php the_title(); ?></h2>
+              <?php if(has_post_thumbnail()) {the_post_thumbnail('custom-large'); } ?>
+           
+              <?php the_content(); ?>
+              </article>
+               <?php
+            }
+          }    
+     ?>
+       
        
       </main>
 
@@ -45,7 +91,7 @@
             while(have_posts()) {
               the_post();
               ?>
-              <article >
+              <article>
               
            
               <a href="<?php the_permalink(); ?>"><h3><?php the_title(); ?></h3></a>
@@ -78,12 +124,12 @@
   
     ?>
 
-          <h3>Boende</h3>
+          <h3>Aktiviteter</h3>
           <hr>
           <br>
         <?php 
         wp_reset_query();
-  query_posts('category_name=boende&posts_per_page=2');
+  query_posts('category_name=aktiviteter&posts_per_page=2');
   if(have_posts()) {  
     while(have_posts()) {
       the_post();

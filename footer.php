@@ -16,7 +16,7 @@
            <?php wp_nav_menu(array('theme_location' => 'Footermeny')); ?>
 
   </nav>
-  <p class="copyright">Copyright hotell @ 2022</p>
+  <p class="copyright">Copyright hotell @ 2022 Skapad av Hosein Moustafa</p>
 
     </section>
     <script src="<?= get_template_directory_uri();?>/js/app.js"></script>
