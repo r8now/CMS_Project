@@ -2,6 +2,7 @@
     <!-- HEAD section and NAVIGATION end-->
               <h1><?php the_title(); ?></h1>
 
+
     <div class="container" >
     <!--  <main style="grid-template-columns: 1fr"> -->
     <main> 
