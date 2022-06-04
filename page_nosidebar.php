@@ -5,7 +5,6 @@ Template name: No sidebar
 
 get_header(); ?>
     <!-- HEAD section and NAVIGATION end-->
-    <h1>nosidebar.PHP</h1>
               <h1><?php the_title(); ?></h1>
 
     <div class="container" >
@@ -42,7 +41,7 @@ if (is_active_sidebar('widget-area'))  : ?>
 
       
        <?php echo do_shortcode('
-  [wpgmza id="1"]
+  [mappress mapid="1"]
 '); ?>
     </div>
     <?php endif; ?>

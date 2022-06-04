@@ -1,6 +1,5 @@
 <?php get_header(); ?>
     <!-- HEAD section and NAVIGATION end-->
-    <h1>category-boende.PHP</h1>
     <!--  get the category name-->
     <?php 
       $category = get_the_category();
@@ -10,7 +9,6 @@
 
 
     <div class="container" >
-    <!--  <main style="grid-template-columns: 1fr"> -->
     <main > 
 
         <?php 

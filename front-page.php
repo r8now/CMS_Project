@@ -1,6 +1,5 @@
 <?php get_header(); ?>
     <!-- HEAD section and NAVIGATION end-->
-    <h1>front-Page.PHP</h1>
               <h1><?php the_title(); ?></h1>
 
     <div class="container" >

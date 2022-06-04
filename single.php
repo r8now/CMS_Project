@@ -1,11 +1,10 @@
 <?php get_header(); ?>
     <!-- HEAD section and NAVIGATION end-->
-    <h1>single.PHP</h1>
               <h1><?php the_title(); ?></h1>
 
     <div class="container" >
     <!--  <main style="grid-template-columns: 1fr"> -->
-    <main  > 
+    <main> 
 
 
         <?php 
@@ -32,7 +31,7 @@
     
     
     </section>
-          <aside > </aside>
+          <aside> </aside>
       
       <?php get_footer(); ?>
 <!-- FOOTER section start-->
