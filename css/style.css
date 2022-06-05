@@ -3,13 +3,28 @@ Theme Name: Skii-Resort
 Author: Hosein Moustafa
 
 */
-
+/* css återställning start*/
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
 
+body,
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+
+}
+
+/* css återställning slut*/
 html {
     scroll-behavior: smooth;
 }
@@ -27,22 +42,7 @@ body {
 
 }
 
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-}
 
-
-
-body,
-h1,
-h2,
-h3,
-p {
-    margin: 0;
-
-}
 p{
     font-size:1.4rem;
     line-height: 1.7rem;
@@ -114,20 +114,20 @@ li a:hover {
     text-decoration: none;
 }
 
-        /*navigation*/
-        nav,
-        ul,
-        li {
-            position: relative;
-            align-items: center;
-            
-        }
+ /*navigation*/
+nav,
+ul,
+li {
+    position: relative;
+    align-items: center;
+
+}
     
-        nav .menu a {
-            border-bottom: none;
-            font-weight: 700;
-            margin-left: 24px;
-            
+  nav .menu a {
+    border-bottom: none;
+    font-weight: 700;
+    margin-left: 24px;
+
         }
 
 /* HEADER CSS START*/

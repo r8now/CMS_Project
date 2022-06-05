@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="<?= get_template_directory_uri();?>/css/style.css" type="text/css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="icon" type="image/png" sizes="32x32" href="<?= get_template_directory_uri();?>/images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="<?= get_template_directory_uri();?>/images/favicon-16x16.png">
 <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,400&display=swap" rel="stylesheet">
     <?php wp_head(); ?>
     <title><?php  bloginfo('name'); ?></title>

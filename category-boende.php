@@ -20,7 +20,7 @@
               <article>
                
                     <br>
-              <h2><?php the_title(); ?></h2>
+              <H2><?php the_title(); ?></H2>
               <?php if(has_post_thumbnail()) {the_post_thumbnail('custom-large'); } ?>
                 <?php the_excerpt(); ?>
 

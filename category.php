@@ -3,8 +3,8 @@
     <!--  get the category name-->
     <?php 
       $category = get_the_category();
- ?>
-    <h1><?php echo $category[0]->cat_name; ?></h1>
+    ?>
+    <H1><?php echo $category[0]->cat_name; ?></H1>
 
 
 
@@ -18,7 +18,7 @@
           if(have_posts()) {
             while(have_posts()) {
               the_post();
-              ?>
+        ?>
               <article>
                
                     <br>
@@ -37,7 +37,7 @@
                <?php
             }
           }    
-     ?>
+               ?>
        
       </main>
 
@@ -47,7 +47,7 @@
 
      
           <aside >
-            <h3>Nyheter</h3>
+            <H3>Nyheter</H3>
             <hr style="margin-bottom:20px;">
            <?php 
              wp_reset_query();//Nollställ custom query
@@ -58,7 +58,7 @@
           if(have_posts()) {
             while(have_posts()) {
               the_post();
-              ?>
+            ?>
               <article>
               
            

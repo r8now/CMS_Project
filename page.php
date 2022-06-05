@@ -1,6 +1,6 @@
 <?php get_header(); ?>
     <!-- HEAD section and NAVIGATION end-->
-              <h1><?php the_title(); ?></h1>
+              <H1><?php the_title(); ?></H1>
               
               
 
@@ -14,7 +14,7 @@
               the_post();
               ?>
               <article ">
-              <h2><?= the_title(); ?></h2>
+              <H2><?= the_title(); ?></H2>
               <?php if(has_post_thumbnail()) {the_post_thumbnail('custom-large'); } ?>
            
               <?php the_content(); ?>
@@ -35,7 +35,7 @@ if (is_active_sidebar('widget-area'))  : ?>
     <?php dynamic_sidebar('widget-area'); ?>
 </div>
 <?php endif; ?>
-<h2>Här hittar du oss!</h2>
+<H2>Här hittar du oss!</H2>
 
       
        <?php echo do_shortcode('

@@ -1,7 +1,6 @@
 <?php get_header(); ?>
     <!-- HEAD section and NAVIGATION end-->
-    <h1>INDEX.PHP</h1>
-              <h1><?php the_title(); ?></h1>
+              <H1><?php the_title(); ?></H1>
 
     <div class="container" >
     <!--  <main style="grid-template-columns: 1fr"> -->
@@ -30,7 +29,7 @@
 
      
           <aside >
-            <h3>Nyheter</h3>
+            <H3>Nyheter</H3>
             <hr style="margin-bottom:20px;">
            <?php 
              wp_reset_query();//Nollställ custom query
@@ -40,7 +39,7 @@
             while(have_posts()) {
               the_post();
               ?>
-              <article ">
+              <article>
               
            
               <a href="<?php the_permalink(); ?>"><h3><?php the_title(); ?></h3></a>
